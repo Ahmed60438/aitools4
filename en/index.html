@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Best AI Tools</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+  :root{
+    --max:1200px; --gap:20px;
+    --bg1:#041627; --bg2:#092a42; --card:#0f1720; --accent:#39c0a1; --muted:#98a8b3; --text:#e6f4f1;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color:var(--text);
+    background: linear-gradient(135deg,var(--bg1) 0%, #07324a 50%, var(--bg2) 100%);
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--max);margin:36px auto;padding:24px;}
+  header{display:flex;align-items:center;gap:16px;justify-content:space-between}
+  .brand{display:flex;gap:12px;align-items:center}
+  .brand .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(180deg,#0b2a36,#062126);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--text)}
+  h1{font-size:1.6rem;margin:0}
+  p.lead{margin:6px 0 0;color:var(--muted)}
+
+  /* grid */
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:var(--gap);margin-top:24px}
+  .card{
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border:1px solid rgba(255,255,255,0.03);
+    padding:18px;border-radius:14px;display:flex;flex-direction:column;gap:12px;align-items:center;
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  .card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(2,8,23,0.6)}
+  .logo-wrap{width:120px;height:90px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));border-radius:10px;padding:8px}
+  .logo-wrap img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+  .title{font-size:1.05rem;margin:4px 0;color:var(--accent);text-align:center}
+  .desc{font-size:.92rem;color:var(--muted);text-align:center}
+  .row{display:flex;gap:8px;align-items:center;margin-top:auto}
+  .btn{padding:8px 12px;border-radius:10px;background:linear-gradient(180deg,var(--accent),#2aa88c);color:#042a24;text-decoration:none;font-weight:600;border:0}
+  .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text);font-weight:500}
+
+  footer{margin-top:28px;color:var(--muted);text-align:center;padding:18px 0;font-size:.95rem}
+
+  @media (max-width:700px){
+    header{flex-direction:column;align-items:flex-start}
+    .brand{margin-bottom:10px}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">AI</div>
+        <div>
+          <h1>Top 30 AI Tools</h1>
+        </div>
+      </div>
+      <div>
+        <!-- language switcher placeholder -->
+      </div>
+    </header>
+
+    <section class="grid" id="toolsGrid">
+      <!-- Cards (30 tools) -->
+      <!-- For each card we use Clearbit logo: https://logo.clearbit.com/domain -->
+      <!-- If logo fails to load JS will replace with inline SVG placeholder -->
+      
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/openai.com?size=200" alt="ChatGPT logo" loading="lazy"></div>
+        <div class="title">ChatGPT</div>
+        <div class="desc">AI assistant for writing, coding and research.</div>
+        <div class="row"><a class="btn" href="https://chat.openai.com/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/canva.com?size=200" alt="Canva logo" loading="lazy"></div>
+        <div class="title">Canva</div>
+        <div class="desc">Design platform with Magic Studio & AI features.</div>
+        <div class="row"><a class="btn" href="https://www.canva.com/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/grammarly.com?size=200" alt="Grammarly logo" loading="lazy"></div>
+        <div class="title">Grammarly</div>
+        <div class="desc">AI grammar & style checker with tone detection.</div>
+        <div class="row"><a class="btn" href="https://www.grammarly.com/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/notion.so?size=200" alt="Notion AI logo" loading="lazy"></div>
+        <div class="title">Notion AI</div>
+        <div class="desc">AI inside Notion for writing and knowledge work.</div>
+        <div class="row"><a class="btn" href="https://www.notion.so/product/ai" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/jasper.ai?size=200" alt="Jasper logo" loading="lazy"></div>
+        <div class="title">Jasper AI</div>
+        <div class="desc">AI content & marketing writing assistant.</div>
+        <div class="row"><a class="btn" href="https://www.jasper.ai/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/copy.ai?size=200" alt="Copy.ai logo" loading="lazy"></div>
+        <div class="title">Copy.ai</div>
+        <div class="desc">Fast marketing copy & idea generator.</div>
+        <div class="row"><a class="btn" href="https://www.copy.ai/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/surferseo.com?size=200" alt="Surfer SEO logo" loading="lazy"></div>
+        <div class="title">Surfer SEO</div>
+        <div class="desc">SEO optimization with AI-driven suggestions.</div>
+        <div class="row"><a class="btn" href="https://surferseo.com/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/pictory.ai?size=200" alt="Pictory logo" loading="lazy"></div>
+        <div class="title">Pictory</div>
+        <div class="desc">Create and edit videos automatically with AI.</div>
+        <div class="row"><a class="btn" href="https://pictory.ai/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/synthesia.io?size=200" alt="Synthesia logo" loading="lazy"></div>
+        <div class="title">Synthesia</div>
+        <div class="desc">AI-generated talking avatar videos.</div>
+        <div class="row"><a class="btn" href="https://www.synthesia.io/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/midjourney.com?size=200" alt="MidJourney logo" loading="lazy"></div>
+        <div class="title">MidJourney</div>
+        <div class="desc">Text-to-image artistic generation.</div>
+        <div class="row"><a class="btn" href="https://www.midjourney.com/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/d-id.com?size=200" alt="D-ID logo" loading="lazy"></div>
+        <div class="title">D-ID</div>
+        <div class="desc">Talking-head videos and face animation.</div>
+        <div class="row"><a class="btn" href="https://www.d-id.com/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/runwayml.com?size=200" alt="Runway logo" loading="lazy"></div>
+        <div class="title">Runway</div>
+        <div class="desc">AI video editing & creative tools.</div>
+        <div class="row"><a class="btn" href="https://runwayml.com/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/huggingface.co?size=200" alt="Hugging Face logo" loading="lazy"></div>
+        <div class="title">Hugging Face</div>
+        <div class="desc">Models, datasets and community for AI.</div>
+        <div class="row"><a class="btn" href="https://huggingface.co/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/replit.com?size=200" alt="Replit logo" loading="lazy"></div>
+        <div class="title">Replit AI</div>
+        <div class="desc">Code generation & collaboration in the browser.</div>
+        <div class="row"><a class="btn" href="https://replit.com/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/scalenut.com?size=200" alt="Scalenut logo" loading="lazy"></div>
+        <div class="title">Scalenut</div>
+        <div class="desc">AI SEO & content marketing platform.</div>
+        <div class="row"><a class="btn" href="https://www.scalenut.com/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/perplexity.ai?size=200" alt="Perplexity logo" loading="lazy"></div>
+        <div class="title">Perplexity AI</div>
+        <div class="desc">Answer engine with live web sources.</div>
+        <div class="row"><a class="btn" href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/photoroom.com?size=200" alt="PhotoRoom logo" loading="lazy"></div>
+        <div class="title">PhotoRoom</div>
+        <div class="desc">Background removal & AI photo editor.</div>
+        <div class="row"><a class="btn" href="https://www.photoroom.com/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/murf.ai?size=200" alt="Murf logo" loading="lazy"></div>
+        <div class="title">Murf AI</div>
+        <div class="desc">Text-to-speech & realistic voice generation.</div>
+        <div class="row"><a class="btn" href="https://murf.ai/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/lexica.art?size=200" alt="Lexica logo" loading="lazy"></div>
+        <div class="title">Lexica</div>
+        <div class="desc">AI art search & prompt gallery.</div>
+        <div class="row"><a class="btn" href="https://lexica.art/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/descript.com?size=200" alt="Descript logo" loading="lazy"></div>
+        <div class="title">Descript</div>
+        <div class="desc">Podcast & video editing with AI overdub.</div>
+        <div class="row"><a class="btn" href="https://www.descript.com/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/fotor.com?size=200" alt="Fotor logo" loading="lazy"></div>
+        <div class="title">Fotor</div>
+        <div class="desc">Photo editing and AI image tools.</div>
+        <div class="row"><a class="btn" href="https://www.fotor.com/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/tome.app?size=200" alt="Tome logo" loading="lazy"></div>
+        <div class="title">Tome AI</div>
+        <div class="desc">Create AI-powered presentations instantly.</div>
+        <div class="row"><a class="btn" href="https://tome.app/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/openai.com?size=200" alt="Codex / OpenAI logo" loading="lazy"></div>
+        <div class="title">OpenAI Codex</div>
+        <div class="desc">AI coding engine that powers Copilot.</div>
+        <div class="row"><a class="btn" href="https://openai.com/research/codex" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://www.chatpdf.com/_next/static/media/ChatPDFLogoDarkText.a1cf9f80.svg" alt="ChatPDF logo" loading="lazy"></div>
+        <div class="title">ChatPDF</div>
+        <div class="desc">Talk with PDF documents using AI.</div>
+        <div class="row"><a class="btn" href="https://www.chatpdf.com/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/podcastle.ai?size=200" alt="Podcastle logo" loading="lazy"></div>
+        <div class="title">Podcastle</div>
+        <div class="desc">AI tools for podcast recording & editing.</div>
+        <div class="row"><a class="btn" href="https://podcastle.ai/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/voicemod.net?size=200" alt="Voicemod logo" loading="lazy"></div>
+        <div class="title">Voicemod</div>
+        <div class="desc">Real-time AI voice changer and effects.</div>
+        <div class="row"><a class="btn" href="https://www.voicemod.net/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/adobe.com?size=200" alt="Adobe Firefly logo" loading="lazy"></div>
+        <div class="title">Adobe Firefly</div>
+        <div class="desc">Generative AI for images & design from Adobe.</div>
+        <div class="row"><a class="btn" href="https://www.adobe.com/sensei/generative-ai/firefly.html" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/elevenlabs.io?size=200" alt="ElevenLabs logo" loading="lazy"></div>
+        <div class="title">ElevenLabs</div>
+        <div class="desc">High-quality AI speech synthesis.</div>
+        <div class="row"><a class="btn" href="https://elevenlabs.io/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/runpod.io?size=200" alt="RunPod logo" loading="lazy"></div>
+        <div class="title">RunPod</div>
+        <div class="desc">GPU cloud for training & running AI workloads.</div>
+        <div class="row"><a class="btn" href="https://www.runpod.io/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+      <div class="card">
+        <div class="logo-wrap"><img class="logoimg" src="https://logo.clearbit.com/kajabi.com?size=200" alt="Kajabi logo" loading="lazy"></div>
+        <div class="title">Kajabi AI</div>
+        <div class="desc">AI tools for course creators & online businesses.</div>
+        <div class="row"><a class="btn" href="https://kajabi.com/" target="_blank" rel="noopener noreferrer nofollow">Visit</a></div>
+      </div>
+
+    </section>
+
+    <footer>© <span id="year"></span> AI Tools directory • Images via Clearbit (recommended: host locally for production)</footer>
+  </div>
+
+<script>
+  // set year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // fallback inline SVG placeholder (encoded)
+  const placeholder = encodeURIComponent(
+    `<svg xmlns='http://www.w3.org/2000/svg' width='400' height='200'>
+      <rect width='100%' height='100%' fill='%230b1220'/>
+      <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%2398a8b3' font-size='28' font-family='Arial'>AI</text>
+    </svg>`
+  );
+  // add error handler for logos
+  document.querySelectorAll('img.logoimg').forEach(img=>{
+    img.onerror = function(){
+      this.onerror=null;
+      this.src = 'data:image/svg+xml;charset=utf8,' + placeholder;
+    };
+  });
+</script>
+</body>
+</html>

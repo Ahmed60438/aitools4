@@ -1,0 +1,512 @@
+[
+  {
+    "id": "openai",
+    "name_en": "ChatGPT",
+    "name_ar": "شات جي بي تي",
+    "desc_en": "General AI assistant for writing, coding and research.",
+    "desc_ar": "مساعد ذكاء اصطناعي عام للكتابة والبرمجة والبحث.",
+    "url": "https://chat.openai.com",
+    "tags_en": [
+      "Chat",
+      "Writing",
+      "Coding"
+    ],
+    "tags_ar": [
+      "دردشة",
+      "كتابة",
+      "برمجة"
+    ],
+    "img": "https://logo.clearbit.com/openai.com"
+  },
+  {
+    "id": "canva",
+    "name_en": "Canva",
+    "name_ar": "كانفا",
+    "desc_en": "Design platform with Magic Studio AI features.",
+    "desc_ar": "منصة تصميم مع مزايا الذكاء الاصطناعي Magic Studio.",
+    "url": "https://www.canva.com",
+    "tags_en": [
+      "Design",
+      "Images"
+    ],
+    "tags_ar": [
+      "تصميم",
+      "صور"
+    ],
+    "img": "https://logo.clearbit.com/canva.com"
+  },
+  {
+    "id": "grammarly",
+    "name_en": "Grammarly",
+    "name_ar": "Grammarly",
+    "desc_en": "AI grammar and style checker with tone detection.",
+    "desc_ar": "مدقق قواعد وأسلوب بالذكاء الاصطناعي مع كشف النبرة.",
+    "url": "https://www.grammarly.com",
+    "tags_en": [
+      "Writing",
+      "Editing"
+    ],
+    "tags_ar": [
+      "كتابة",
+      "تحرير"
+    ],
+    "img": "https://logo.clearbit.com/grammarly.com"
+  },
+  {
+    "id": "midjourney",
+    "name_en": "Midjourney",
+    "name_ar": "Midjourney",
+    "desc_en": "Text-to-image art generation via Discord.",
+    "desc_ar": "توليد صور وفن من النص عبر ديسكورد.",
+    "url": "https://www.midjourney.com",
+    "tags_en": [
+      "Images",
+      "Art"
+    ],
+    "tags_ar": [
+      "صور",
+      "فن"
+    ],
+    "img": "https://logo.clearbit.com/midjourney.com"
+  },
+  {
+    "id": "openai",
+    "name_en": "DALL·E",
+    "name_ar": "DALL·E",
+    "desc_en": "OpenAI image generation from text.",
+    "desc_ar": "توليد صور من النص بواسطة OpenAI.",
+    "url": "https://openai.com/dall-e-3",
+    "tags_en": [
+      "Images",
+      "Art"
+    ],
+    "tags_ar": [
+      "صور",
+      "فن"
+    ],
+    "img": "https://logo.clearbit.com/openai.com"
+  },
+  {
+    "id": "ai",
+    "name_en": "Google Gemini",
+    "name_ar": "جيميني من جوجل",
+    "desc_en": "Google's multimodal AI for reasoning and tasks.",
+    "desc_ar": "نظام ذكاء اصطناعي متعدد الوسائط من جوجل.",
+    "url": "https://gemini.google.com",
+    "tags_en": [
+      "Chat",
+      "Search"
+    ],
+    "tags_ar": [
+      "دردشة",
+      "بحث"
+    ],
+    "img": "https://logo.clearbit.com/ai.google"
+  },
+  {
+    "id": "anthropic",
+    "name_en": "Claude",
+    "name_ar": "كلود",
+    "desc_en": "Anthropic's helpful, honest and harmless assistant.",
+    "desc_ar": "مساعد أنثروبيك الذكي والمتعاون.",
+    "url": "https://claude.ai",
+    "tags_en": [
+      "Chat",
+      "Writing"
+    ],
+    "tags_ar": [
+      "دردشة",
+      "كتابة"
+    ],
+    "img": "https://logo.clearbit.com/anthropic.com"
+  },
+  {
+    "id": "perplexity",
+    "name_en": "Perplexity",
+    "name_ar": "بيربلكسيتي",
+    "desc_en": "Answer engine with live web search.",
+    "desc_ar": "محرك إجابات مع بحث مباشر على الويب.",
+    "url": "https://www.perplexity.ai",
+    "tags_en": [
+      "Search",
+      "Chat"
+    ],
+    "tags_ar": [
+      "بحث",
+      "دردشة"
+    ],
+    "img": "https://logo.clearbit.com/perplexity.ai"
+  },
+  {
+    "id": "notion",
+    "name_en": "Notion AI",
+    "name_ar": "نوشن AI",
+    "desc_en": "AI inside Notion for writing and knowledge work.",
+    "desc_ar": "ذكاء اصطناعي داخل Notion للكتابة وإدارة المعرفة.",
+    "url": "https://www.notion.so/product/ai",
+    "tags_en": [
+      "Productivity",
+      "Writing"
+    ],
+    "tags_ar": [
+      "إنتاجية",
+      "كتابة"
+    ],
+    "img": "https://logo.clearbit.com/notion.so"
+  },
+  {
+    "id": "jasper",
+    "name_en": "Jasper",
+    "name_ar": "جاسبر",
+    "desc_en": "AI marketing copy and blog content.",
+    "desc_ar": "كتابة تسويقية ومحتوى مقالات بالذكاء الاصطناعي.",
+    "url": "https://www.jasper.ai",
+    "tags_en": [
+      "Marketing",
+      "Writing"
+    ],
+    "tags_ar": [
+      "تسويق",
+      "كتابة"
+    ],
+    "img": "https://logo.clearbit.com/jasper.ai"
+  },
+  {
+    "id": "copy",
+    "name_en": "Copy.ai",
+    "name_ar": "كوبي.اي آي",
+    "desc_en": "Generate marketing copy and emails fast.",
+    "desc_ar": "إنشاء نصوص تسويقية ورسائل بريد بسرعة.",
+    "url": "https://www.copy.ai",
+    "tags_en": [
+      "Marketing",
+      "Writing"
+    ],
+    "tags_ar": [
+      "تسويق",
+      "كتابة"
+    ],
+    "img": "https://logo.clearbit.com/copy.ai"
+  },
+  {
+    "id": "quillbot",
+    "name_en": "QuillBot",
+    "name_ar": "كويل بوت",
+    "desc_en": "Paraphrasing and summarizing tool.",
+    "desc_ar": "أداة لإعادة الصياغة والتلخيص.",
+    "url": "https://quillbot.com",
+    "tags_en": [
+      "Writing",
+      "Editing"
+    ],
+    "tags_ar": [
+      "كتابة",
+      "تحرير"
+    ],
+    "img": "https://logo.clearbit.com/quillbot.com"
+  },
+  {
+    "id": "wordtune",
+    "name_en": "Wordtune",
+    "name_ar": "ووردتيون",
+    "desc_en": "Rewrite and refine sentences with AI.",
+    "desc_ar": "إعادة صياغة وتحسين الجمل بالذكاء الاصطناعي.",
+    "url": "https://www.wordtune.com",
+    "tags_en": [
+      "Writing",
+      "Editing"
+    ],
+    "tags_ar": [
+      "كتابة",
+      "تحرير"
+    ],
+    "img": "https://logo.clearbit.com/wordtune.com"
+  },
+  {
+    "id": "runwayml",
+    "name_en": "Runway",
+    "name_ar": "رانواي",
+    "desc_en": "AI video generation and editing tools.",
+    "desc_ar": "أدوات توليد وتحرير الفيديو بالذكاء الاصطناعي.",
+    "url": "https://runwayml.com",
+    "tags_en": [
+      "Video",
+      "Editing"
+    ],
+    "tags_ar": [
+      "فيديو",
+      "تحرير"
+    ],
+    "img": "https://logo.clearbit.com/runwayml.com"
+  },
+  {
+    "id": "elevenlabs",
+    "name_en": "ElevenLabs",
+    "name_ar": "إليفن لابز",
+    "desc_en": "AI voice generation with natural voices.",
+    "desc_ar": "توليد أصوات طبيعية بالذكاء الاصطناعي.",
+    "url": "https://elevenlabs.io",
+    "tags_en": [
+      "Voice",
+      "Audio"
+    ],
+    "tags_ar": [
+      "صوت",
+      "أوديو"
+    ],
+    "img": "https://logo.clearbit.com/elevenlabs.io"
+  },
+  {
+    "id": "synthesia",
+    "name_en": "Synthesia",
+    "name_ar": "سينثيسيا",
+    "desc_en": "Create AI videos with avatars and voiceovers.",
+    "desc_ar": "إنشاء فيديوهات بشخصيات افتراضية وتعليق صوتي.",
+    "url": "https://www.synthesia.io",
+    "tags_en": [
+      "Video",
+      "Avatars"
+    ],
+    "tags_ar": [
+      "فيديو",
+      "أفاتار"
+    ],
+    "img": "https://logo.clearbit.com/synthesia.io"
+  },
+  {
+    "id": "heygen",
+    "name_en": "HeyGen",
+    "name_ar": "هي-جين",
+    "desc_en": "AI video avatars and dubbing.",
+    "desc_ar": "شخصيات فيديو وتبديل صوت/شفاه بالذكاء الاصطناعي.",
+    "url": "https://www.heygen.com",
+    "tags_en": [
+      "Video",
+      "Avatars"
+    ],
+    "tags_ar": [
+      "فيديو",
+      "أفاتار"
+    ],
+    "img": "https://logo.clearbit.com/heygen.com"
+  },
+  {
+    "id": "d-id",
+    "name_en": "D-ID",
+    "name_ar": "دي-آي-دي",
+    "desc_en": "Talking head videos from photos.",
+    "desc_ar": "تحويل الصور إلى فيديو متكلم.",
+    "url": "https://www.d-id.com",
+    "tags_en": [
+      "Video",
+      "Images"
+    ],
+    "tags_ar": [
+      "فيديو",
+      "صور"
+    ],
+    "img": "https://logo.clearbit.com/d-id.com"
+  },
+  {
+    "id": "capcut",
+    "name_en": "CapCut",
+    "name_ar": "كاب كت",
+    "desc_en": "Video editor with strong AI tools.",
+    "desc_ar": "محرر فيديو بميزات ذكاء اصطناعي قوية.",
+    "url": "https://www.capcut.com",
+    "tags_en": [
+      "Video",
+      "Editing"
+    ],
+    "tags_ar": [
+      "فيديو",
+      "تحرير"
+    ],
+    "img": "https://logo.clearbit.com/capcut.com"
+  },
+  {
+    "id": "adobe",
+    "name_en": "Adobe Firefly",
+    "name_ar": "أدوبي فايرفلاي",
+    "desc_en": "Generative AI for images and design.",
+    "desc_ar": "ذكاء توليدي للصور والتصميم من أدوبي.",
+    "url": "https://www.adobe.com/products/firefly.html",
+    "tags_en": [
+      "Images",
+      "Design"
+    ],
+    "tags_ar": [
+      "صور",
+      "تصميم"
+    ],
+    "img": "https://logo.clearbit.com/adobe.com"
+  },
+  {
+    "id": "remove",
+    "name_en": "Remove.bg",
+    "name_ar": "ريموف بي جي",
+    "desc_en": "Remove backgrounds from photos automatically.",
+    "desc_ar": "إزالة خلفيات الصور تلقائيًا.",
+    "url": "https://www.remove.bg",
+    "tags_en": [
+      "Images",
+      "Editing"
+    ],
+    "tags_ar": [
+      "صور",
+      "تحرير"
+    ],
+    "img": "https://logo.clearbit.com/remove.bg"
+  },
+  {
+    "id": "deepl",
+    "name_en": "DeepL",
+    "name_ar": "ديب إل",
+    "desc_en": "High-quality AI translation.",
+    "desc_ar": "ترجمة عالية الجودة بالذكاء الاصطناعي.",
+    "url": "https://www.deepl.com",
+    "tags_en": [
+      "Translation"
+    ],
+    "tags_ar": [
+      "ترجمة"
+    ],
+    "img": "https://logo.clearbit.com/deepl.com"
+  },
+  {
+    "id": "otter",
+    "name_en": "Otter.ai",
+    "name_ar": "أوتر.اي آي",
+    "desc_en": "Transcription and meeting notes.",
+    "desc_ar": "تفريغ صوتي وتدوين ملاحظات الاجتماعات.",
+    "url": "https://otter.ai",
+    "tags_en": [
+      "Audio",
+      "Productivity"
+    ],
+    "tags_ar": [
+      "صوت",
+      "إنتاجية"
+    ],
+    "img": "https://logo.clearbit.com/otter.ai"
+  },
+  {
+    "id": "clickup",
+    "name_en": "ClickUp AI",
+    "name_ar": "كليك أب AI",
+    "desc_en": "AI assistant for project management and docs.",
+    "desc_ar": "مساعد ذكاء اصطناعي لإدارة المشاريع والمستندات.",
+    "url": "https://clickup.com/ai",
+    "tags_en": [
+      "Productivity",
+      "Writing"
+    ],
+    "tags_ar": [
+      "إنتاجية",
+      "كتابة"
+    ],
+    "img": "https://logo.clearbit.com/clickup.com"
+  },
+  {
+    "id": "microsoft",
+    "name_en": "Microsoft Copilot",
+    "name_ar": "مايكروسوفت كوبيلوت",
+    "desc_en": "AI assistant across Microsoft apps and web.",
+    "desc_ar": "مساعد ذكاء اصطناعي عبر تطبيقات مايكروسوفت والويب.",
+    "url": "https://copilot.microsoft.com",
+    "tags_en": [
+      "Chat",
+      "Productivity"
+    ],
+    "tags_ar": [
+      "دردشة",
+      "إنتاجية"
+    ],
+    "img": "https://logo.clearbit.com/microsoft.com"
+  },
+  {
+    "id": "github",
+    "name_en": "GitHub Copilot",
+    "name_ar": "جيتهاب كوبيلوت",
+    "desc_en": "AI pair programmer for code.",
+    "desc_ar": "مساعد برمجي بالذكاء الاصطناعي.",
+    "url": "https://github.com/features/copilot",
+    "tags_en": [
+      "Coding",
+      "IDE"
+    ],
+    "tags_ar": [
+      "برمجة",
+      "بيئة تطوير"
+    ],
+    "img": "https://logo.clearbit.com/github.com"
+  },
+  {
+    "id": "replit",
+    "name_en": "Replit AI",
+    "name_ar": "ريبليت AI",
+    "desc_en": "Ghostwriter-style AI coding inside Replit.",
+    "desc_ar": "مساعد برمجة بالذكاء الاصطناعي داخل Replit.",
+    "url": "https://replit.com",
+    "tags_en": [
+      "Coding",
+      "IDE"
+    ],
+    "tags_ar": [
+      "برمجة",
+      "بيئة تطوير"
+    ],
+    "img": "https://logo.clearbit.com/replit.com"
+  },
+  {
+    "id": "huggingface",
+    "name_en": "Hugging Face",
+    "name_ar": "هاجينغ فيس",
+    "desc_en": "Models, datasets and Spaces for AI apps.",
+    "desc_ar": "نماذج وبيانات ومساحات لتطبيقات الذكاء الاصطناعي.",
+    "url": "https://huggingface.co",
+    "tags_en": [
+      "Models",
+      "Community"
+    ],
+    "tags_ar": [
+      "نماذج",
+      "مجتمع"
+    ],
+    "img": "https://logo.clearbit.com/huggingface.co"
+  },
+  {
+    "id": "stability",
+    "name_en": "Stable Diffusion",
+    "name_ar": "ستيبِل ديفيوجن",
+    "desc_en": "Open text-to-image model by StabilityAI.",
+    "desc_ar": "نموذج مفتوح لتحويل النص إلى صورة من StabilityAI.",
+    "url": "https://stability.ai",
+    "tags_en": [
+      "Images",
+      "Open-source"
+    ],
+    "tags_ar": [
+      "صور",
+      "مفتوح المصدر"
+    ],
+    "img": "https://logo.clearbit.com/stability.ai"
+  },
+  {
+    "id": "leonardo",
+    "name_en": "Leonardo AI",
+    "name_ar": "ليوناردو AI",
+    "desc_en": "Generate high-quality game and art assets.",
+    "desc_ar": "توليد عناصر فنية وأصول ألعاب بجودة عالية.",
+    "url": "https://leonardo.ai",
+    "tags_en": [
+      "Images",
+      "Art"
+    ],
+    "tags_ar": [
+      "صور",
+      "فن"
+    ],
+    "img": "https://logo.clearbit.com/leonardo.ai"
+  }
+]

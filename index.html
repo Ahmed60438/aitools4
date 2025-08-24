@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Tools - Redirecting...</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // معرفة لغة المتصفح
+      let userLang = navigator.language || navigator.userLanguage;
+
+      // لو اللغة عربية يحوله لمجلد ar
+      if (userLang.toLowerCase().startsWith("ar")) {
+        window.location.replace("ar/index.html");
+      } 
+      // غير ذلك يحوله لمجلد en
+      else {
+        window.location.replace("en/index.html");
+      }
+    });
+  </script>
+</head>
+<body>
+  <p style="text-align:center; font-family:Arial; margin-top:50px;">
+    Redirecting to your language version...
+  </p>
+</body>
+</html>
