@@ -4,8 +4,8 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <meta name="description" content="اكتشف أفضل أدوات الذكاء الاصطناعي لتوليد النصوص، تعديل الصور، إنشاء المحتوى، وتحسين الإنتاجية بسهولة وبشكل مجاني.">
-<meta name="keywords" content="أدوات الذكاء الاصطناعي, AI tools, توليد النصوص, تعديل الصور, إنشاء المحتوى, مجاني, إنتاجية">
-<title>أفضل أدوات الذكاء الإصطناعي</title>
+<meta name="keywords" content="أدوات الذكاء الاصطناعي, أدوات AI, توليد النصوص, تعديل الصور, إنشاء المحتوى, مجاني, إنتاجية">
+<title>أفضل أدوات الذكاء الاصطناعي</title>
 <link rel="icon" href="favicon.png" type="image/png">
 <style>
   :root{
@@ -14,25 +14,59 @@
   }
   *{box-sizing:border-box}
   body{
-    margin:0; font-family:"Cairo", Tahoma, system-ui, Arial;
+    margin:0; font-family:"Tajawal", system-ui, sans-serif;
     color:var(--text);
     background: linear-gradient(135deg,var(--bg1) 0%, #07324a 50%, var(--bg2) 100%);
-    direction: rtl; text-align:right;
+    -webkit-font-smoothing:antialiased;
   }
   .wrap{max-width:var(--max);margin:36px auto;padding:24px;}
-  header{display:flex;align-items:center;gap:16px;justify-content:space-between;flex-direction:row-reverse}
-  .brand{display:flex;gap:12px;align-items:center;flex-direction:row-reverse}
+  header{display:flex;align-items:center;gap:16px;justify-content:space-between;flex-wrap:wrap}
+  .brand{display:flex;gap:12px;align-items:center}
   .brand .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(180deg,#0b2a36,#062126);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--text)}
   h1{font-size:1.6rem;margin:0}
+  p.lead{margin:6px 0 0;color:var(--muted)}
+
+  /* Search box */
+  .search-box{
+    margin-top:20px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+  }
+  .search-box input{
+    width:100%;
+    max-width:400px;
+    padding:10px 14px;
+    border-radius:10px;
+    border:none;
+    font-size:1rem;
+    outline:none;
+    text-align:right;
+  }
+
+  /* grid */
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:var(--gap);margin-top:24px}
-  .card{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.05);padding:18px;border-radius:14px;display:flex;flex-direction:column;gap:12px;align-items:center;transition: transform .18s}
+  .card{
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border:1px solid rgba(255,255,255,0.03);
+    padding:18px;border-radius:14px;display:flex;flex-direction:column;gap:12px;align-items:center;
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
   .card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(2,8,23,0.6)}
-  .logo-wrap{width:120px;height:90px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.03);border-radius:10px;padding:8px}
+  .logo-wrap{width:120px;height:90px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));border-radius:10px;padding:8px}
   .logo-wrap img{max-width:100%;max-height:100%;object-fit:contain;display:block}
   .title{font-size:1.05rem;margin:4px 0;color:var(--accent);text-align:center}
   .desc{font-size:.92rem;color:var(--muted);text-align:center}
-  .btn{padding:8px 12px;border-radius:10px;background:linear-gradient(180deg,var(--accent),#2aa88c);color:#042a24;text-decoration:none;font-weight:600}
+  .row{display:flex;gap:8px;align-items:center;margin-top:auto}
+  .btn{padding:8px 12px;border-radius:10px;background:linear-gradient(180deg,var(--accent),#2aa88c);color:#042a24;text-decoration:none;font-weight:600;border:0}
+  .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text);font-weight:500}
+
   footer{margin-top:28px;color:var(--muted);text-align:center;padding:18px 0;font-size:.95rem}
+
+  @media (max-width:700px){
+    header{flex-direction:column;align-items:flex-start}
+    .brand{margin-bottom:10px}
+  }
 </style>
 </head>
 <body>
@@ -40,12 +74,19 @@
     <header>
       <div class="brand">
         <div class="logo">AI</div>
-        <div><h1>أفضل 30 أداة للذكاء الاصطناعي</h1></div>
+        <div>
+          <h1>أفضل 30 أداة للذكاء الاصطناعي</h1>
+        </div>
       </div>
     </header>
 
-    <section class="grid">
-      <!-- الأدوات -->
+    <!-- Search -->
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="ابحث عن أداة...">
+    </div>
+
+    <section class="grid" id="toolsGrid">
+	      <!-- الأدوات -->
 
       <div class="card"><div class="logo-wrap"><img src="https://logo.clearbit.com/openai.com" alt="ChatGPT"></div><div class="title">ChatGPT</div><div class="desc">مساعد ذكي للكتابة والبرمجة.</div><a class="btn" href="https://chat.openai.com/" target="_blank">زيارة</a></div>
 
@@ -109,8 +150,42 @@
 
     </section>
 
-    <footer>© <span id="year"></span> دليل أدوات الذكاء الاصطناعي</footer>
+    <footer>© <span id="year"></span>دليل أدوات الذكاء الإصطناعي</footer>
   </div>
-<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+
+<script>
+  // السنة الحالية
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // صورة افتراضية عند الفشل
+  const placeholder = encodeURIComponent(
+    `<svg xmlns='http://www.w3.org/2000/svg' width='400' height='200'>
+      <rect width='100%' height='100%' fill='%230b1220'/>
+      <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%2398a8b3' font-size='28' font-family='Arial'>AI</text>
+    </svg>`
+  );
+  document.querySelectorAll('img.logoimg').forEach(img=>{
+    img.onerror = function(){
+      this.onerror=null;
+      this.src = 'data:image/svg+xml;charset=utf8,' + placeholder;
+    };
+  });
+
+  // البحث في الأدوات
+  const searchInput = document.getElementById('searchInput');
+  const cards = document.querySelectorAll('.card');
+  searchInput.addEventListener('input', function(){
+    const term = this.value.toLowerCase();
+    cards.forEach(card=>{
+      const title = card.querySelector('.title').textContent.toLowerCase();
+      const desc = card.querySelector('.desc').textContent.toLowerCase();
+      if(title.includes(term) || desc.includes(term)){
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+</script>
 </body>
 </html>
