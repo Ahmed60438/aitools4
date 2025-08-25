@@ -6,7 +6,7 @@
 <meta name="description" content="Discover the best AI tools for text generation, image editing, content creation, and productivity enhancement easily and for free.">
 <meta name="keywords" content="AI tools, artificial intelligence, text generation, image editing, content creation, free, productivity">
 <title>Best AI Tools</title>
-<link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" href="favicon.png" type="image/png">
 <style>
   :root{
     --max:1200px; --gap:20px;
@@ -20,11 +20,28 @@
     -webkit-font-smoothing:antialiased;
   }
   .wrap{max-width:var(--max);margin:36px auto;padding:24px;}
-  header{display:flex;align-items:center;gap:16px;justify-content:space-between}
+  header{display:flex;align-items:center;gap:16px;justify-content:space-between;flex-wrap:wrap}
   .brand{display:flex;gap:12px;align-items:center}
   .brand .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(180deg,#0b2a36,#062126);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--text)}
   h1{font-size:1.6rem;margin:0}
   p.lead{margin:6px 0 0;color:var(--muted)}
+
+  /* Search box */
+  .search-box{
+    margin-top:20px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+  }
+  .search-box input{
+    width:100%;
+    max-width:400px;
+    padding:10px 14px;
+    border-radius:10px;
+    border:none;
+    font-size:1rem;
+    outline:none;
+  }
 
   /* grid */
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:var(--gap);margin-top:24px}
@@ -60,13 +77,15 @@
           <h1>Top 30 AI Tools</h1>
         </div>
       </div>
-      <div>
-        <!-- language switcher placeholder -->
-      </div>
     </header>
 
+    <!-- Search -->
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search for a tool...">
+    </div>
+
     <section class="grid" id="toolsGrid">
-      <!-- Cards (30 tools) -->
+	      <!-- Cards (30 tools) -->
       <!-- For each card we use Clearbit logo: https://logo.clearbit.com/domain -->
       <!-- If logo fails to load JS will replace with inline SVG placeholder -->
       
@@ -286,22 +305,37 @@
   </div>
 
 <script>
-  // set year
+  // Set year
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  // fallback inline SVG placeholder (encoded)
+  // Fallback inline SVG placeholder
   const placeholder = encodeURIComponent(
     `<svg xmlns='http://www.w3.org/2000/svg' width='400' height='200'>
       <rect width='100%' height='100%' fill='%230b1220'/>
       <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%2398a8b3' font-size='28' font-family='Arial'>AI</text>
     </svg>`
   );
-  // add error handler for logos
   document.querySelectorAll('img.logoimg').forEach(img=>{
     img.onerror = function(){
       this.onerror=null;
       this.src = 'data:image/svg+xml;charset=utf8,' + placeholder;
     };
+  });
+
+  // Search filter
+  const searchInput = document.getElementById('searchInput');
+  const cards = document.querySelectorAll('.card');
+  searchInput.addEventListener('input', function(){
+    const term = this.value.toLowerCase();
+    cards.forEach(card=>{
+      const title = card.querySelector('.title').textContent.toLowerCase();
+      const desc = card.querySelector('.desc').textContent.toLowerCase();
+      if(title.includes(term) || desc.includes(term)){
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
   });
 </script>
 </body>
